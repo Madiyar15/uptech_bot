@@ -1,0 +1,103 @@
+[
+  {
+    "id": 1,
+    "name": "Введение в нейронные сети: трансформеры и генеративные модели",
+    "name_en": "Introduction to Neural Networks: Transformers and Generative",
+    "lecturer": "Строева Е.Н.",
+    "description": "Цель курса: на простых примерах и задачах показать принципы работы трансформеров и генеративных искусственных нейронных сетей, научить использовать готовые блоки кода для решения задач.\n\nКурс ориентирован на студентов 3-6 курсов, имеющих знания по полносвязным, свёрточным и рекуррентным искусственным нейронным сетям, владеющих навыками программирования на языке Python. Будем вместе разбирать готовые реализации и решать много простых задач, для закрепления материала предусмотрено выполнение и разбор домашнего задания.\n\nОжидается, что после прохождения курса, слушатели освоят основные определения и конструкции, смогут самостоятельно решать различные задачи.",
+    "level": "Продвинутый",
+    "duration": "8 недель",
+    "price": "Бесплатно",
+    "materials": [
+      {
+        "type": "code",
+        "name": "Embedding (Exercises)",
+        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[1]_Embedding_(Exercises).ipynb"
+      },
+      {
+        "type": "code",
+        "name": "Attention Theory",
+        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[2]_Attention_Theory.ipynb"
+      },
+      {
+        "type": "code",
+        "name": "RNN + CrossAttention (Exercises)",
+        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[3]_RNN+CrossAttention_(Exercises).ipynb"
+      },
+      {
+        "type": "code",
+        "name": "Attention Explained (Exercises)",
+        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[4]_Attention_Explained_(Exercises).ipynb"
+      },
+      {
+        "type": "code",
+        "name": "Position Embedding Explained",
+        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[5]_PositionEmbeddingExplained_(Exercises).ipynb"
+      },
+      {
+        "type": "code",
+        "name": "Attention Transformer (Exercises)",
+        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[6] Attention_Transformer (Exercises).ipynb"
+      },
+      {
+        "type": "code",
+        "name": "BERT Sentiment Analysis (Exercises)",
+        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[7]_BERT_sentiment_analysis (Exercises).ipynb"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Введение в нейронные сети: Python для работы с ИНС",
+    "name_en": "Introduction to Neural Networks: Python for Working with ANNs",
+    "lecturer": "Строева Е.Н.",
+    "description": "Цель курса: изучить основы программирования на Python, необходимые для дальнейшего прохождения курсов по реализации искусственных нейронных сетей.\n\nКурс ориентирован на студентов 1-6 курсов. Будем вместе решать много простых задач, для закрепления материала предусмотрено выполнение и разбор домашнего задания. Ожидается, что после прохождения курса, слушатели освоят основные определения и конструкции, смогут самостоятельно решать различные задачи.",
+    "level": "Начинающий",
+    "duration": "6 недель",
+    "price": "Бесплатно",
+    "materials": [
+      {
+        "type": "code",
+        "name": "Упражнение 1: Print, Input и типы данных",
+        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[1P]_Print_Input_Types_(Exercises).ipynb"
+      },
+      {
+        "type": "code",
+        "name": "Упражнение 2: Функции",
+        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[2P]_Functions_(Exercises).ipynb"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Sage и LaTeX: применение к научным исследованиям",
+    "name_en": "Sage and LaTeX: Application to Scientific Research",
+    "lecturer": "Строева Е.Н.",
+    "description": "Цель курса: курс рассчитан для студентов младших курсов как подготовительный перед изучением программирования на языке Python, помогающий в решении задач математического анализа и линейной алгебры.\n\nТакже курс призван сформировать культуру и принципы занятий научной деятельностью для увеличения эффективности последующей работы на старших курсах.",
+    "level": "Начинающий",
+    "duration": "5 недель",
+    "price": "Бесплатно",
+    "materials": [
+      {
+        "type": "code",
+        "name": "History and basic syntax (Exercises)",
+        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[1S] History and basic syntax (Exercises).ipynb"
+      },
+      {
+        "type": "code",
+        "name": "Markdown and LaTeX",
+        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[2S] Markdown and LaTeX.ipynb"
+      },
+      {
+        "type": "pdf",
+        "name": "LaTeX Туториал",
+        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/Latex_My_Tutorial-5 (2) (2).pdf"
+      },
+      {
+        "type": "pdf",
+        "name": "Файл про Научные работы",
+        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/Файл_про_Научные_работы.pdf"
+      }
+    ]
+  }
+]

@@ -6,6 +6,7 @@ from telegram import Update
 from telegram.ext import ContextTypes
 from bot.keyboard.keyboards import get_courses_keyboard, get_materials_keyboard, get_main_menu_keyboard
 from utils.db import get_course_by_name, get_course_by_id, get_course_materials
+from config import BASE_DIR
 
 
 async def handle_course_selection(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -141,6 +142,10 @@ async def send_materials(update: Update, context: ContextTypes.DEFAULT_TYPE, mat
     # Отправляем каждый файл как документ
     for material in materials:
         file_path = material.get('file_path') or material.get('url')
+        
+        # Конвертируем относительный путь в абсолютный
+        if file_path and not file_path.startswith('http') and not os.path.isabs(file_path):
+            file_path = os.path.join(BASE_DIR, file_path)
         
         # Проверяем, это локальный файл (путь) или URL
         if file_path and os.path.exists(file_path):

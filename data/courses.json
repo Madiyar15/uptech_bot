@@ -12,37 +12,37 @@
       {
         "type": "code",
         "name": "Embedding (Exercises)",
-        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[1]_Embedding_(Exercises).ipynb"
+        "file_path": "data/materials/[1]_Embedding_(Exercises).ipynb"
       },
       {
         "type": "code",
         "name": "Attention Theory",
-        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[2]_Attention_Theory.ipynb"
+        "file_path": "data/materials/[2]_Attention_Theory.ipynb"
       },
       {
         "type": "code",
         "name": "RNN + CrossAttention (Exercises)",
-        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[3]_RNN+CrossAttention_(Exercises).ipynb"
+        "file_path": "data/materials/[3]_RNN+CrossAttention_(Exercises).ipynb"
       },
       {
         "type": "code",
         "name": "Attention Explained (Exercises)",
-        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[4]_Attention_Explained_(Exercises).ipynb"
+        "file_path": "data/materials/[4]_Attention_Explained_(Exercises).ipynb"
       },
       {
         "type": "code",
         "name": "Position Embedding Explained",
-        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[5]_PositionEmbeddingExplained_(Exercises).ipynb"
+        "file_path": "data/materials/[5]_PositionEmbeddingExplained_(Exercises).ipynb"
       },
       {
         "type": "code",
         "name": "Attention Transformer (Exercises)",
-        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[6] Attention_Transformer (Exercises).ipynb"
+        "file_path": "data/materials/[6] Attention_Transformer (Exercises).ipynb"
       },
       {
         "type": "code",
         "name": "BERT Sentiment Analysis (Exercises)",
-        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[7]_BERT_sentiment_analysis (Exercises).ipynb"
+        "file_path": "data/materials/[7]_BERT_sentiment_analysis (Exercises).ipynb"
       }
     ]
   },
@@ -59,12 +59,12 @@
       {
         "type": "code",
         "name": "Упражнение 1: Print, Input и типы данных",
-        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[1P]_Print_Input_Types_(Exercises).ipynb"
+        "file_path": "data/materials/[1P]_Print_Input_Types_(Exercises).ipynb"
       },
       {
         "type": "code",
         "name": "Упражнение 2: Функции",
-        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[2P]_Functions_(Exercises).ipynb"
+        "file_path": "data/materials/[2P]_Functions_(Exercises).ipynb"
       }
     ]
   },
@@ -81,22 +81,22 @@
       {
         "type": "code",
         "name": "History and basic syntax (Exercises)",
-        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[1S] History and basic syntax (Exercises).ipynb"
+        "file_path": "data/materials/[1S] History and basic syntax (Exercises).ipynb"
       },
       {
         "type": "code",
         "name": "Markdown and LaTeX",
-        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/[2S] Markdown and LaTeX.ipynb"
+        "file_path": "data/materials/[2S] Markdown and LaTeX.ipynb"
       },
       {
         "type": "pdf",
         "name": "LaTeX Туториал",
-        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/Latex_My_Tutorial-5 (2) (2).pdf"
+        "file_path": "data/materials/Latex_My_Tutorial-5 (2) (2).pdf"
       },
       {
         "type": "pdf",
         "name": "Файл про Научные работы",
-        "file_path": "C:/Users/admin/OneDrive/Desktop/uptech_bot/Файл_про_Научные_работы.pdf"
+        "file_path": "data/materials/Файл_про_Научные_работы.pdf"
       }
     ]
   }

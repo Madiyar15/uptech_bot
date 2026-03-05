@@ -7,6 +7,9 @@ from dotenv import load_dotenv
 # Загружаем переменные из .env файла
 load_dotenv()
 
+# Путь к корневой папке проекта
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # Получить токен из переменной окружения или использовать значение по умолчанию
 BOT_TOKEN = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
 

@@ -61,8 +61,6 @@ https://www.youtube.com/@math_hedgehog
 
     # Файлы материалов
     materials_files = [
-        ("codelibs.ru_mashinnoe-obuchenie-osnovy.pdf", "Машинное обучение основы (CodeLibs.ru)"),
-        ("Nikolenko_S_I_Kadurin_A_A_Arkhangelskaya_E_O_Glubokoe_obuchenie.pdf", "Глубокое обучение (Николенко, Кадурин, Архангельская)"),
         ("data/materials/Latex_My_Tutorial-5 (2) (2).pdf", "LaTeX Туториал"),
         ("data/materials/Файл_про_Научные_работы.pdf", "Файл про Научные работы"),
     ]

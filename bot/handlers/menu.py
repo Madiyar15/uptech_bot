@@ -1,9 +1,10 @@
 """
 Обработчики основного меню
 """
+import os
 from telegram import Update
 from telegram.ext import ContextTypes
-from config import MENU_TEXTS
+from config import MENU_TEXTS, BASE_DIR
 from bot.keyboard.keyboards import (
     get_main_menu_keyboard,
     get_courses_keyboard,
@@ -45,25 +46,52 @@ async def handle_courses(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
 async def handle_useful_materials(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Обработчик кнопки Полезные материалы"""
+    # Выводим информацию о ресурсах
     text = """📖 Полезные материалы
 
-1. 📚 Официальная документация Python
-   https://docs.python.org
+🔗 Математические основы МО и ИНС - QuData
+https://qudata.com/ml/ru/
+📝 Полный курс с математическими основами машинного обучения и искусственных нейронных сетей
 
-2. 📘 Real Python Tutorials
-   https://realpython.com
-
-3. 🎥 YouTube каналы для программистов
-   - Programming with Mosh
-   - Traversy Media
-   - Corey Schafer
-
-4. 📱 Мобильные приложения для обучения
-   - Codecademy
-   - SoloLearn
-   - HackerRank
+🔗 Math Hedgehog - YouTube канал
+https://www.youtube.com/@math_hedgehog
+📺 Видео-уроки по математике и машинному обучению
 """
-    await update.message.reply_text(text, reply_markup=get_back_keyboard())
+    await update.message.reply_text(text)
+
+    # Файлы материалов
+    materials_files = [
+        ("data/materials/Latex_My_Tutorial-5 (2) (2).pdf", "LaTeX Туториал"),
+        ("data/materials/Файл_про_Научные_работы.pdf", "Файл про Научные работы"),
+    ]
+
+    # Отправляем каждый файл
+    for file_path, display_name in materials_files:
+        # Преобразуем относительный путь в абсолютный
+        if not os.path.isabs(file_path):
+            full_path = os.path.join(BASE_DIR, file_path)
+        else:
+            full_path = file_path
+
+        # Проверяем, существует ли файл
+        if os.path.exists(full_path):
+            try:
+                with open(full_path, 'rb') as f:
+                    await update.message.reply_document(
+                        document=f,
+                        caption=f"📎 {display_name}",
+                        filename=os.path.basename(full_path)
+                    )
+            except Exception as e:
+                await update.message.reply_text(
+                    f"❌ Ошибка при отправке файла {display_name}: {str(e)}"
+                )
+
+    # Показываем кнопку возврата
+    await update.message.reply_text(
+        "Выберите действие:",
+        reply_markup=get_back_keyboard()
+    )
 
 
 async def handle_events(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:

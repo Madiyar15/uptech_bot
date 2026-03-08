@@ -96,10 +96,14 @@ async def handle_video_search_result(update: Update, context: ContextTypes.DEFAU
         for i, video in enumerate(videos, 1):
             # Форматируем длительность
             duration = video.get('duration', 0)
-            if duration:
-                minutes = duration // 60
-                seconds = duration % 60
-                duration_str = f"{minutes}:{seconds:02d}"
+            if duration and isinstance(duration, (int, float)):
+                try:
+                    total_seconds = int(duration)
+                    minutes = total_seconds // 60
+                    seconds = total_seconds % 60
+                    duration_str = f"{minutes}:{seconds:02d}"
+                except (ValueError, TypeError):
+                    duration_str = "?"
             else:
                 duration_str = "?"
 

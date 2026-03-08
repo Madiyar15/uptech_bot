@@ -9,7 +9,8 @@ def get_main_menu_keyboard():
     buttons = [
         [KeyboardButton("📚 Курсы")],
         [KeyboardButton("📖 Полезные материалы")],
-        [KeyboardButton("📅 События")],
+        [KeyboardButton("� Поиск видео")],
+        [KeyboardButton("�📅 События")],
         [KeyboardButton("ℹ️ О нас")],
     ]
     return ReplyKeyboardMarkup(buttons, resize_keyboard=True, one_time_keyboard=False)

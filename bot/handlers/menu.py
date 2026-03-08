@@ -10,6 +10,7 @@ from bot.keyboard.keyboards import (
     get_courses_keyboard,
     get_back_keyboard,
 )
+from bot.handlers.video_search import handle_video_search_request
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -29,7 +30,9 @@ async def menu_button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE
         await handle_courses(update, context)
     elif text == "📖 Полезные материалы":
         await handle_useful_materials(update, context)
-    elif text == "📅 События":
+    elif text == "� Поиск видео":
+        await handle_video_search_request(update, context)
+    elif text == "�📅 События":
         await handle_events(update, context)
     elif text == "ℹ️ О нас":
         await handle_about(update, context)

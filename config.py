@@ -33,6 +33,7 @@ MAIN_MENU_BUTTONS = ["📚 Курсы", "📖 Полезные материал�
 BUTTON_TEXTS = {
     "📚 Курсы": "courses",
     "📖 Полезные материалы": "useful_materials",
-    "📅 События": "events",
+    "� Поиск видео": "video_search",
+    "�📅 События": "events",
     "ℹ️ О нас": "about",
 }

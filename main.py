@@ -21,6 +21,7 @@ from bot.handlers.courses import (
     handle_course_selection,
     handle_course_materials,
 )
+from bot.handlers.video_search import handle_video_search_result
 
 # Логирование
 logging.basicConfig(
@@ -57,6 +58,11 @@ async def general_message_handler(update: Update, context: ContextTypes.DEFAULT_
     # Проверка на выбор материалов
     if context.user_data.get("state") == "selecting_materials":
         await handle_course_materials(update, context)
+        return
+
+    # Проверка на поиск видео
+    if context.user_data.get("state") == "searching_video":
+        await handle_video_search_result(update, context)
         return
 
 

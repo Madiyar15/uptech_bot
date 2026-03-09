@@ -7,6 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 from telegram import Update
 from telegram.ext import ContextTypes
 from bot.keyboard.keyboards import get_main_menu_keyboard
+import urllib.parse
 
 # Пул потоков для yt-dlp
 executor = ThreadPoolExecutor(max_workers=1)
@@ -110,9 +111,20 @@ async def handle_video_search_result(update: Update, context: ContextTypes.DEFAU
             pass
 
         if not videos:
+            # Если yt-dlp не нашел видео, показываем ссылку на YouTube поиск
+            youtube_search_url = f"https://www.youtube.com/results?search_query={urllib.parse.quote(search_query)}"
+            
+            text = f"""❌ Не удалось получить видео через встроенный поиск
+
+🔍 Вот ссылка на поиск YouTube:
+🔗 {youtube_search_url}
+
+Или попробуйте другой поисковый запрос."""
+            
             await update.message.reply_text(
-                f"❌ Видео по запросу '{search_query}' не найдены.\n\nПопробуйте другой поисковый запрос.",
+                text,
                 reply_markup=get_main_menu_keyboard(),
+                disable_web_page_preview=False,
             )
             context.user_data["state"] = None
             return
@@ -153,9 +165,18 @@ async def handle_video_search_result(update: Update, context: ContextTypes.DEFAU
         except:
             pass
         
+        # Если ошибка, показываем ссылку на YouTube поиск
+        youtube_search_url = f"https://www.youtube.com/results?search_query={urllib.parse.quote(search_query)}"
+        
+        text = f"""⚠️ Ошибка при поиске видео: {str(e)}
+
+🔍 Вот ссылка на поиск YouTube:
+🔗 {youtube_search_url}"""
+        
         await update.message.reply_text(
-            f"❌ Ошибка при поиске видео: {str(e)}\n\nПопробуйте еще раз.",
+            text,
             reply_markup=get_main_menu_keyboard(),
+            disable_web_page_preview=False,
         )
     finally:
         context.user_data["state"] = None
